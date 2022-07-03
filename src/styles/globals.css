@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.companies {
+  background: linear-gradient(
+    91.55deg,
+    rgba(229, 229, 229, 0.4) -44.73%,
+    rgba(245, 245, 245, 0.156934) -16%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(20px);
+}
+
+.b {
+  border: 1px solid red;
+}
+
+.card-wrapper-icon {
+  background: linear-gradient(
+    96.2deg,
+    rgba(48, 102, 102, 0.2) 0%,
+    rgba(58, 223, 223, 0.2) 100%
+  );
+}
