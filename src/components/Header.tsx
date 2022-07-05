@@ -12,22 +12,10 @@ const Header: FunctionComponent = () => {
   const router = useRouter();
 
   const headerItems = [
-    {
-      label: router.pathname === "/" ? "About Us" : "More",
-      href: `${router.pathname === "/" ? "/#aboutUs" : "/more#more_detail"}`,
-    },
-    {
-      label: router.pathname === "/" ? "How It Works" : "Creator",
-      href: `${router.pathname === "/" ? "/#howItWorks" : "/more#who_created"}`,
-    },
-    {
-      label: router.pathname === "/" ? "Testimony" : "Advantage",
-      href: `${router.pathname === "/" ? "/#testinomy" : "/more#advantage"}`,
-    },
-    {
-      label: router.pathname === "/" ? "Subscribe" : "Possible Stuff",
-      href: `${router.pathname === "/" ? "/#subscribe" : "/more#can_do"}`,
-    },
+    { label: "About Us", href: "#aboutUs" },
+    { label: "How It Works", href: "#howItWorks" },
+    { label: "Testinomies", href: "#testinomies" },
+    { label: "Subscribe", href: "#subscribe" },
   ];
 
   return (
@@ -39,7 +27,7 @@ const Header: FunctionComponent = () => {
         className="w-36 h-36 md:w-[300px] md:h-[300px] rounded-full border-dashed border-2 border-dash absolute -top-20 md:-top-52 left-[35%]"
       />
 
-      <header className="flex w-full items-center justify-between px-7 md:px-16 lg:px-[120px] mt-14 md:mt-0 relative">
+      <header className="flex w-full items-center justify-between px-7 md:px-16 lg:px-[120px] mt-7 md:mt-0 relative">
         <div
           className="flex items-center space-x-0 md:space-x-5 lg:space-x-16"
           data-aos="fade-right"

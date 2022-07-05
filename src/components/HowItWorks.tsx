@@ -1,28 +1,25 @@
 import { FunctionComponent } from "react";
-
-import {
-  LightningBoltIcon,
-  LogoutIcon,
-  UserIcon,
-} from "@heroicons/react/solid";
 import HowCard, { IHowCardProps } from "./HowCard";
+import LoginIcon from "./Icons/Login";
+import ProfileIcon from "./Icons/Profile";
+import StarIcon from "./Icons/Star";
 
 const HowItWorks: FunctionComponent = () => {
-  const howItWorks: Array<IHowCardProps> = [
+  const howItWorks: Array<Omit<IHowCardProps, "index">> = [
     {
-      Icon: UserIcon,
+      Icon: ProfileIcon,
       title: "Create a Account",
       description:
         "Create an account first so you can enter the server selection menu",
     },
     {
-      Icon: LogoutIcon,
+      Icon: LoginIcon,
       title: "Select Your Server",
       description:
         "Choose a server to play on or  invite your friends to play together",
     },
     {
-      Icon: LightningBoltIcon,
+      Icon: StarIcon,
       title: "Enjoy Your Virtual World",
       description:
         "The final step is to enter the virtual reality world and play alone or with your friends!",
@@ -58,8 +55,7 @@ const HowItWorks: FunctionComponent = () => {
             Icon={howItWork.Icon}
             description={howItWork.description}
             title={howItWork.title}
-            data-aos-delay={`${index}00`}
-            data-aos="fade-up"
+            index={index}
           />
         ))}
       </div>

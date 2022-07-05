@@ -14,6 +14,9 @@ export type ButtonType =
       type: ButtonHTMLAttributes<HTMLButtonElement>["type"];
       children: ReactNode;
       title: string;
+      aos: string;
+      aosDelay?: number | string;
+      aosDuration?: number | string;
       className?: string;
       onSubmit?: DOMAttributes<HTMLButtonElement>["onSubmit"];
       onClick?: DOMAttributes<HTMLButtonElement>["onClick"];
@@ -25,6 +28,9 @@ export type ButtonType =
       el: "a";
       href: string;
       children: ReactNode;
+      aos: string;
+      aosDelay?: number | string;
+      aosDuration?: number | string;
       passHref?: boolean;
       scroll?: boolean;
       className?: string;
@@ -47,6 +53,9 @@ const Button: FunctionComponent<ButtonType> = (props) => {
       disabled,
       style,
       variant = "with-bg",
+      aos,
+      aosDelay,
+      aosDuration,
     } = props;
 
     return (
@@ -55,7 +64,9 @@ const Button: FunctionComponent<ButtonType> = (props) => {
         onClick={onClick}
         className={`${variant === "with-bg" ? withBg : noBg} ${className} `}
         disabled={disabled}
-        {...props}
+        data-aos={aos}
+        data-aos-delay={aosDelay}
+        data-aos-duration={aosDuration}
       >
         {children}
       </button>
@@ -69,12 +80,17 @@ const Button: FunctionComponent<ButtonType> = (props) => {
       className,
       target,
       variant = "with-bg",
+      aos,
+      aosDelay,
+      aosDuration,
     } = props;
 
     return (
       <Link href={href} passHref={passHref} scroll={scroll}>
         <a
-          {...props}
+          data-aos={aos}
+          data-aos-delay={aosDelay}
+          data-aos-duration={aosDuration}
           target={target}
           className={`${variant === "with-bg" ? withBg : noBg} ${className}`}
         >

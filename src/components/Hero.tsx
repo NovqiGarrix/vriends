@@ -69,7 +69,7 @@ const Hero: FunctionComponent = () => {
         <div className="w-[203px] h-[203px] rounded-full border-dashed border-2 border-dash absolute top-36 -right-20" />
 
         <div className="flex items-center w-full justify-around md:justify-center space-x-5 mt-8 relative">
-          <Button el="a" href="/login" passHref scroll data-aos="fade-up-right">
+          <Button el="a" href="/login" passHref scroll aos="fade-up-right">
             Let&#8216;s Start!
           </Button>
           <Button
@@ -79,7 +79,7 @@ const Hero: FunctionComponent = () => {
             passHref
             scroll
             className="px-5"
-            data-aos="fade-down-left"
+            aos="fade-down-left"
           >
             <p className="mr-2">View Demo</p>
             <ArrowRightIcon className="w-3 h-5 text-iconColor group-hover:text-bg" />

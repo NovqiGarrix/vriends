@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { FunctionComponent } from "react";
+import Image from "next/image";
 import Button from "./Button";
 
 const AboutMetaverse: FunctionComponent = () => {
@@ -31,7 +31,7 @@ const AboutMetaverse: FunctionComponent = () => {
               href="/more"
               passHref
               className="inline-flex"
-              data-aos="fade-up"
+              aos="fade-up"
             >
               Read More
             </Button>

@@ -1,7 +1,7 @@
-import { FormEvent, FunctionComponent, useState } from "react";
+import { FunctionComponent, useState } from "react";
 import Image from "next/image";
 
-import GradientButton from "./GradientButton";
+import Button from "./Button";
 
 const Subscribe: FunctionComponent = () => {
   const [email, setEmail] = useState("");
@@ -16,7 +16,7 @@ const Subscribe: FunctionComponent = () => {
       data-aos-duration="500"
     >
       <div
-        className="bg-transparent lg:bg-gradient-to-r lg:from-darkRed lg:to-clay p-[0px] lg:p-[1px]"
+        className="bg-transparent xl:bg-gradient-to-rxl:from-darkRedxl:to-clay p-[0px]xl:p-[1px]"
         data-aos="fade"
       >
         <div className="flex flex-col md:flex-row items-center justify-center overflow-hidden md:space-x-5 w-full h-full bg-bg">
@@ -53,22 +53,15 @@ const Subscribe: FunctionComponent = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-              <GradientButton
+              <Button
+                aos="slide-left"
                 el="button"
                 type="submit"
                 title="Send"
                 className="inline-flex"
               >
                 Send
-              </GradientButton>
-              {/* <Button
-                el="button"
-                type="submit"
-                title="Send"
-                className="inline-flex"
-              >
-                Send
-              </Button> */}
+              </Button>
             </form>
           </div>
 

@@ -1,21 +1,23 @@
-import { ComponentProps, FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 
 export interface IHowCardProps {
-  Icon: (props: ComponentProps<"svg">) => JSX.Element;
+  Icon: FunctionComponent;
   title: string;
   description: string;
+  index: number;
 }
 
 const HowCard: FunctionComponent<IHowCardProps> = (props) => {
-  const { Icon, description, title } = props;
+  const { Icon, description, title, index } = props;
 
   return (
     <div
       className="p-5 rounded-2xl bg-[#101C1C] md:min-h-[250px] lg:min-h-full"
-      {...props}
+      data-aos-delay={`${index}00`}
+      data-aos="fade-up"
     >
       <div className="p-4 lg:p-5 card-wrapper-icon inline-flex text-center rounded-full">
-        <Icon className="w-4 h-4 lg:w-5 lg:h-5 text-clay/80" />
+        <Icon />
       </div>
 
       <h3 className="font-monserat font-semibold text-lg text-light mt-5 md:text-base lg:text-xl">
