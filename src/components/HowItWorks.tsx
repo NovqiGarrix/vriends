@@ -30,8 +30,8 @@ const HowItWorks: FunctionComponent = () => {
   ];
 
   return (
-    <div className="mt-20">
-      <h1 className="font-monserat text-light font-semibold text-2xl md:text-4xl lg:text-[56px] md:text-center">
+    <div className="mt-20" id="howItWorks">
+      <h1 className="font-monserat text-light font-semibold text-2xl md:text-4xl lg:text-[56px] md:text-center leading-[120%] tracking-[1px]">
         How it <span className="text-clay">Work</span>
       </h1>
 

@@ -1,12 +1,11 @@
-import Image from "next/image";
 import { FunctionComponent } from "react";
-import Button from "./Button";
+import Image from "next/image";
 
 const AboutMetaverse: FunctionComponent = () => {
   return (
-    <div className="relative">
+    <div className="relative mt-16" id="more_detail">
       {/* Circle with Dashes */}
-      <div className="w-[203px] h-[203px] rounded-full border-dashed border-2 border-dash absolute -right-28 -top-28" />
+      <div className="w-[68px] h-[68px] md:w-[70px] md:h-[70px] lg:w-[117px] lg:h-[117px] rounded-full border-dashed border-2 border-dash absolute -left-10 -top-5" />
 
       {/* <div className="bg-gradient-to-r from-darkGradient to-clay p-[1px]"> */}
       <div className="flex flex-col items-center justify-center md:flex-row-reverse overflow-hidden">
@@ -19,17 +18,17 @@ const AboutMetaverse: FunctionComponent = () => {
 
           <p className="font-manrope text-sm text-p lg:text-2xl mt-5 tracking-[0.5px] w-[98%] lg:w-[90%] break-words whitespace-normal leading-relaxed">
             Metaverse is an Augmented Reality (AR) technology that allows
-            individuals to interact with other individuals virtually.
+            individuals to interact with other individuals virtually. Meta
+            universes in a broader sense may not only refer to virtual
+            environments operated by social media companies but the entire
+            spectrum of augmented reality.
           </p>
 
           <div className="relative w-[50%] mt-5 lg:mt-10">
-            <Button el="a" href="/more" passHref className="inline-flex">
-              Read More
-            </Button>
-            {/* Circle with Dashes */}
-            <div className="block lg:hidden w-[50px] h-[50px] rounded-full border-dashed border-2 border-dash absolute -right-16 top-0 md:-right-24" />
+            {/* Circle with Dashes for Small Devices */}
+            <div className="block lg:hidden w-[68px] h-[68px] rounded-full border-dashed border-2 border-dash absolute -right-48" />
 
-            {/* Circle with Dashes */}
+            {/* Circle with Dashes for Large Devices */}
             <div className="w-[100px] h-[100px] hidden lg:block rounded-full border-dashed border-2 border-dash absolute right-32 top-40" />
           </div>
         </div>

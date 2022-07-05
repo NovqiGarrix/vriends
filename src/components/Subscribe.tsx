@@ -10,17 +10,17 @@ const Subscribe: FunctionComponent = () => {
   const onSubscribe = async (event: FormEvent<HTMLFormElement>) => {};
 
   return (
-    <div className="relative mt-20">
+    <div className="relative mt-20" id="subscribe">
       <div className="bg-transparent lg:bg-gradient-to-r lg:from-darkRed lg:to-clay p-[0px] lg:p-[1px]">
         <div className="flex flex-col md:flex-row items-center justify-center overflow-hidden md:space-x-5 w-full h-full bg-bg">
           <div className="md:w-[65%] lg:w-[50%]">
-            <h2 className="text-2xl md:text-3xl relative z-10 lg:text-[56px] text-iconColor font-semibold font-monserat leading-tight">
+            <h2 className="text-2xl md:text-3xl relative z-10 lg:text-[56px] text-iconColor font-semibold font-monserat leading-[120%] tracking-[1px]">
               <span className="text-clay leading-tight">Subscribe </span> For
               New <span className="text-darkRed leading-tight">Updates</span>{" "}
               From Us
             </h2>
 
-            <p className="font-manrope text-sm text-p lg:text-2xl mt-5 tracking-[0.5px] w-[98%] lg:w-[90%] break-words whitespace-normal leading-relaxed">
+            <p className="font-manrope text-sm text-p lg:text-2xl mt-5 tracking-[0.5px] w-[98%] lg:w-[90%] break-words whitespace-normal leading-[180%]">
               Subscribe to our newsletter to get the latest updates from us. You
               can unsubscribe at any time.
             </p>

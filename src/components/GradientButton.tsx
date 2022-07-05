@@ -32,10 +32,10 @@ export type ButtonType =
 
 const GradientButton: FunctionComponent<ButtonType> = (props) => {
   const noBg =
-    "cursor-pointer bg-gradient-to-br from-darkRed to-clay flex items-center text-iconColor p-[1px] font-monserat select-none font-semibold rounded-lg text-xs lg:text-sm";
+    "cursor-pointer bg-gradient-to-br from-darkGradient to-clay flex items-center text-iconColor p-[1px] font-monserat select-none font-semibold rounded-lg text-xs lg:text-sm";
 
   const childClasses =
-    "bg-bg px-8 py-3 min-md:px-5 min-md:py-2 lg:px-8 lg:py-3 rounded-lg text-clay duration-150 transition-all";
+    "bg-bg px-6 py-3 min-md:px-5 min-md:py-2 lg:px-8 lg:py-3 rounded-lg text-clay duration-150 transition-all";
 
   if (props.el === "button") {
     const { className, onClick, type, children, disabled, title, style } =

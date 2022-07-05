@@ -5,8 +5,7 @@ const Testimonials: FunctionComponent = () => {
     {
       name: "Tiffany Rolfe",
       location: "New York, USA",
-      description:
-        "AR so far seems to be the simplest way to transition us into the metaverse. But we’ll continue to see attempts to push more into VR with headsets.",
+      description: `AR seems to be the simplest way to transition us into Metaverse. We${"'"}ll continue to see attempts to push more into VR`,
     },
     {
       name: "Rony Abovitz",
@@ -18,19 +17,19 @@ const Testimonials: FunctionComponent = () => {
       name: "Matthew Ball",
       location: "New York, USA",
       description:
-        "The brilliant thing about platform changes of this magnitude is its unpredictability. We can say blanket statements like participate in an AR world, spend more time wearing VR headsets, and own more virtual goods.",
+        "The brilliant thing about platform changes of this magnitude is its unpredictability. We can spend more time wearing VR headsets.",
     },
     {
       name: "Yat Siu",
       location: "Nashville, USA",
       description:
-        "Reality will exist on a spectrum ranging from physical to virtual (VR), but a significant chunk of our time will be spent somewhere between those extremes, in some form of augmented reality (AR).",
+        "Reality will exist on a spectrum ranging from physical to virtual (VR), but our time will be spent somewhere in AR.",
     },
   ];
 
   return (
-    <div className="mt-20">
-      <h2 className="text-2xl md:text-3xl relative z-10 lg:text-[56px] text-iconColor font-semibold font-monserat leading-tight md:text-center md:w-[80%] lg:w-[70%] mx-auto">
+    <div className="mt-20" id="testinomy">
+      <h2 className="text-2xl md:text-3xl relative z-10 lg:text-[56px] text-iconColor font-semibold font-monserat md:text-center md:w-[80%] lg:w-[70%] mx-auto leading-[120%] tracking-[1px]">
         What Did They
         <span className="text-clay leading-tight"> Say</span> about{" "}
         <span className="text-darkRed leading-tight">Metaverse!</span>
@@ -42,7 +41,7 @@ const Testimonials: FunctionComponent = () => {
             key={testimony.name}
             className="space-y-3 border border-[#D9D9D9]/60 bg-bg p-4 min-md:p-5 rounded-xl shadow-md shadow-black/50"
           >
-            <p className="text-sm text-light font-manrope font-medium md:text-xl lg:text-2xl">
+            <p className="text-sm text-light font-manrope font-medium md:text-xl lg:text-2xl leading-[180%] tracking-[0.5px]">
               &ldquo;{testimony.description}&rdquo;
             </p>
 

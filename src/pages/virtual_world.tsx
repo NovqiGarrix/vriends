@@ -1,24 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+
 import { IMetas } from "../components/Meta";
-import {
-  AboutMetaverse,
-  Footer,
-  Header,
-  Hero,
-  HowItWorks,
-  Meta,
-  Subscribe,
-  Testimonials,
-} from "../components";
+import { Footer, Header, Meta, VirtualWorld } from "../components";
 
 const Home: NextPage = () => {
   const metas: IMetas = {
     description:
-      "Vriends is the evolution of the Virtual world. With us, you don't have to worry if you have trouble exploring the virtual world.",
+      "Here you can try the Atmosphère of Virtual World, a virtual reality experience.",
     image: "/logo.png",
-    title: "Vriends - The Virtual World",
-    url: "/",
+    title: "Virtual World in Milan - Vriends",
+    url: "/virtual_world",
   };
 
   return (
@@ -35,15 +27,10 @@ const Home: NextPage = () => {
 
       <main className="py-10 md:py-8">
         <Header />
-        <Hero />
-        <div className="px-7 md:px-16 mt-16 lg:px-[120px]">
-          <AboutMetaverse />
-          <HowItWorks />
-          <Testimonials />
-          <Subscribe />
-
+        <div className="px-7 md:px-16 lg:px-[120px]">
+          <VirtualWorld />
           {/* A Hairline as divider between main content and footer */}
-          <div className="w-full h-[1px] bg-iconColor/50 my-5 lg:my-7 lg:mt-12" />
+          <div className="w-full h-[1px] bg-iconColor/20 my-5 mt-14 lg:my-7 lg:mt-12" />
           <Footer />
         </div>
       </main>

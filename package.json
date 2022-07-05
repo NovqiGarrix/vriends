@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@georgedrpg/pannellum-react-next": "^1.2.5",
     "@heroicons/react": "^1.0.6",
     "next": "12.2.0",
     "react": "18.2.0",

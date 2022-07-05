@@ -1,6 +1,7 @@
-import { ArrowRightIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import { FunctionComponent } from "react";
+import { ArrowRightIcon } from "@heroicons/react/outline";
+
 import Button from "./Button";
 
 const Hero: FunctionComponent = () => {
@@ -40,7 +41,7 @@ const Hero: FunctionComponent = () => {
         {/* Circle with Dashes */}
         <div className="w-12 h-12 rounded-full border-dashed border-2 border-dash absolute left-9 top-9" />
 
-        <h1 className="text-2xl lg:text-[64px] relative mt-5 text-iconColor font-medium font-monserat leading-[120%]">
+        <h1 className="text-2xl lg:text-[64px] relative mt-5 text-iconColor font-semibold font-monserat leading-[120%] tracking-[1px]">
           <span className="text-clay">Explore</span> and{" "}
           <span className="text-darkRed">Find</span> your friends in virtual
           world
@@ -61,7 +62,7 @@ const Hero: FunctionComponent = () => {
           </Button>
           <Button
             el="a"
-            href="/demo"
+            href="/virtual_world"
             variant="no-bg"
             passHref
             scroll
@@ -83,7 +84,7 @@ const Hero: FunctionComponent = () => {
             objectFit="contain"
           />
         </div>
-        <div className="companies flex items-center justify-around xl:justify-between xl:space-x-10 w-full py-5 lg:py-12 -mt-[79px] lg:-mt-32 px-10 md:px-48 lg:px-[430px] relative z-10">
+        <div className="companies flex items-center justify-around xl:justify-between xl:space-x-10 w-full py-5 lg:py-12 -mt-[79px] lg:-mt-[156px] px-10 md:px-48 lg:px-[430px] relative z-10">
           <div className="w-24 lg:w-44">
             <Image
               alt="Google Logo"

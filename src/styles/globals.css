@@ -25,3 +25,22 @@
     rgba(58, 223, 223, 0.2) 100%
   );
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  line-height: 180% !important;
+  letter-spacing: 0.5px !important;
+}
+
+.can-do-list {
+  background: linear-gradient(
+    91.55deg,
+    rgba(229, 229, 229, 0.4) -44.73%,
+    rgba(245, 245, 245, 0.156934) -16%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(100px);
+}

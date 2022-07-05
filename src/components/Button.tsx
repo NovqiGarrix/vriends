@@ -34,10 +34,10 @@ export type ButtonType =
 
 const Button: FunctionComponent<ButtonType> = (props) => {
   const withBg =
-    "cursor-pointer flex items-center text-bg font-monserat select-none font-semibold px-8 py-3 bg-gradient-to-br from-darkGradient to-clay min-md:px-5 min-md:py-2 lg:px-8 lg:py-3 rounded-lg text-xs lg:text-sm hover:bg-clay focus:ring-2 focus:ring-clay focus:ring-offset-2 focus:ring-offset-bg group";
+    "cursor-pointer flex items-center text-bg font-monserat select-none font-semibold px-6 py-3 bg-gradient-to-br from-darkGradient to-clay min-md:px-5 min-md:py-2 lg:px-8 lg:py-3 rounded-lg text-xs lg:text-sm hover:bg-clay focus:ring-2 focus:ring-clay focus:ring-offset-2 focus:ring-offset-bg group";
 
   const noBg =
-    "cursor-pointer flex items-center border-none text-iconColor font-monserat select-none font-semibold px-8 py-3 min-md:px-5 min-md:py-2 lg:px-8 lg:py-3 rounded-lg text-xs lg:text-sm hover:bg-gradient-to-br hover:from-darkGradient hover:to-clay hover:text-bg focus:ring-2 focus:ring-darkRed focus:ring-offset-2 focus:ring-offset-bg group";
+    "cursor-pointer flex items-center border-none text-iconColor font-monserat select-none font-semibold px-6 py-3 min-md:px-5 min-md:py-2 lg:px-8 lg:py-3 rounded-lg text-xs lg:text-sm hover:bg-gradient-to-br hover:from-darkGradient hover:to-clay hover:text-bg focus:ring-2 focus:ring-darkRed focus:ring-offset-2 focus:ring-offset-bg group";
 
   if (props.el === "button") {
     const {

@@ -2,23 +2,22 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { IMetas } from "../components/Meta";
 import {
-  AboutMetaverse,
+  Advantage,
+  CanDoList,
   Footer,
   Header,
-  Hero,
-  HowItWorks,
   Meta,
-  Subscribe,
-  Testimonials,
+  MoreAboutMetaverse,
+  WhoCreated,
 } from "../components";
 
 const Home: NextPage = () => {
   const metas: IMetas = {
     description:
-      "Vriends is the evolution of the Virtual world. With us, you don't have to worry if you have trouble exploring the virtual world.",
+      "Metaverse is an Augmented Reality (AR) technology that allows individuals to interact with other individuals virtually.",
     image: "/logo.png",
-    title: "Vriends - The Virtual World",
-    url: "/",
+    title: "More About Metaverse - Vriends",
+    url: "/more",
   };
 
   return (
@@ -35,15 +34,13 @@ const Home: NextPage = () => {
 
       <main className="py-10 md:py-8">
         <Header />
-        <Hero />
-        <div className="px-7 md:px-16 mt-16 lg:px-[120px]">
-          <AboutMetaverse />
-          <HowItWorks />
-          <Testimonials />
-          <Subscribe />
-
+        <div className="px-7 md:px-16 lg:px-[120px]">
+          <MoreAboutMetaverse />
+          <WhoCreated />
+          <Advantage />
+          <CanDoList />
           {/* A Hairline as divider between main content and footer */}
-          <div className="w-full h-[1px] bg-iconColor/50 my-5 lg:my-7 lg:mt-12" />
+          <div className="w-full h-[1px] bg-iconColor/20 my-5 mt-14 lg:my-7 lg:mt-12" />
           <Footer />
         </div>
       </main>
