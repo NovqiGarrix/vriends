@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { FunctionComponent } from "react";
 
-const VirtualWorld: FunctionComponent = (props) => {
+const VirtualWorld: FunctionComponent = () => {
   const VR = dynamic(() => import("./VR"), { ssr: false });
 
   return (

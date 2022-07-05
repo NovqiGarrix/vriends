@@ -43,22 +43,19 @@ const Button: FunctionComponent<ButtonType> = (props) => {
     const {
       className,
       onClick,
-      type,
       children,
       disabled,
-      title,
       style,
       variant = "with-bg",
     } = props;
 
     return (
       <button
-        title={title}
-        type={type}
         style={style}
         onClick={onClick}
         className={`${variant === "with-bg" ? withBg : noBg} ${className} `}
         disabled={disabled}
+        {...props}
       >
         {children}
       </button>
@@ -77,6 +74,7 @@ const Button: FunctionComponent<ButtonType> = (props) => {
     return (
       <Link href={href} passHref={passHref} scroll={scroll}>
         <a
+          {...props}
           target={target}
           className={`${variant === "with-bg" ? withBg : noBg} ${className}`}
         >

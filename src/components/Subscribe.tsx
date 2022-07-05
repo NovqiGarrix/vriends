@@ -1,31 +1,46 @@
 import { FormEvent, FunctionComponent, useState } from "react";
 import Image from "next/image";
 
-import Button from "./Button";
 import GradientButton from "./GradientButton";
 
 const Subscribe: FunctionComponent = () => {
   const [email, setEmail] = useState("");
 
-  const onSubscribe = async (event: FormEvent<HTMLFormElement>) => {};
+  const onSubscribe = async () => {};
 
   return (
-    <div className="relative mt-20" id="subscribe">
-      <div className="bg-transparent lg:bg-gradient-to-r lg:from-darkRed lg:to-clay p-[0px] lg:p-[1px]">
+    <div
+      className="relative mt-20"
+      id="subscribe"
+      data-aos="zoom-in"
+      data-aos-duration="500"
+    >
+      <div
+        className="bg-transparent lg:bg-gradient-to-r lg:from-darkRed lg:to-clay p-[0px] lg:p-[1px]"
+        data-aos="fade"
+      >
         <div className="flex flex-col md:flex-row items-center justify-center overflow-hidden md:space-x-5 w-full h-full bg-bg">
           <div className="md:w-[65%] lg:w-[50%]">
-            <h2 className="text-2xl md:text-3xl relative z-10 lg:text-[56px] text-iconColor font-semibold font-monserat leading-[120%] tracking-[1px]">
+            <h2
+              className="text-2xl md:text-3xl relative z-10 lg:text-[56px] text-iconColor font-semibold font-monserat leading-[120%] tracking-[1px]"
+              data-aos="slide-right"
+            >
               <span className="text-clay leading-tight">Subscribe </span> For
               New <span className="text-darkRed leading-tight">Updates</span>{" "}
               From Us
             </h2>
 
-            <p className="font-manrope text-sm text-p lg:text-2xl mt-5 tracking-[0.5px] w-[98%] lg:w-[90%] break-words whitespace-normal leading-[180%]">
+            <p
+              className="font-manrope text-sm text-p lg:text-2xl mt-5 tracking-[0.5px] w-[98%] lg:w-[90%] break-words whitespace-normal leading-[180%]"
+              data-aos="slide-right"
+              data-aos-delay="200"
+            >
               Subscribe to our newsletter to get the latest updates from us. You
               can unsubscribe at any time.
             </p>
 
             <form
+              data-aos="fade-up"
               onSubmit={onSubscribe}
               className="mt-5 lg:mt-10 inline-flex items-center justify-center space-x-4 w-full lg:w-[60%]"
             >
@@ -57,13 +72,14 @@ const Subscribe: FunctionComponent = () => {
             </form>
           </div>
 
-          <div className="p-0">
+          <div className="p-0" data-aos="zoom-out">
             <Image
               alt="Metaverse"
               src="/ar3.png"
               width={500}
               height={500}
               objectFit="contain"
+              data-aos="zoom-out"
             />
           </div>
         </div>

@@ -3,14 +3,17 @@ import Image from "next/image";
 
 const AboutMetaverse: FunctionComponent = () => {
   return (
-    <div className="relative mt-16" id="more_detail">
+    <div className="relative mt-20" id="more_detail">
       {/* Circle with Dashes */}
       <div className="w-[68px] h-[68px] md:w-[70px] md:h-[70px] lg:w-[117px] lg:h-[117px] rounded-full border-dashed border-2 border-dash absolute -left-10 -top-5" />
 
       {/* <div className="bg-gradient-to-r from-darkGradient to-clay p-[1px]"> */}
       <div className="flex flex-col items-center justify-center md:flex-row-reverse overflow-hidden">
-        <div className="md:ml-5 md:w-[50%]">
-          <h2 className="text-2xl md:text-4xl relative z-10 lg:text-[56px] text-iconColor font-semibold font-monserat leading-[120%] tracking-[1px]">
+        <div className="md:ml-5 md:w-[50%]" data-aos="fade-right">
+          <h2
+            className="text-2xl md:text-4xl relative z-10 lg:text-[56px] text-iconColor font-semibold font-monserat leading-[120%] tracking-[1px]"
+            data-aos="slide-left"
+          >
             Let&#8216;s <span className="text-clay leading-tight">Find </span>{" "}
             out about{" "}
             <span className="text-darkRed leading-tight">Metaverse!</span>
@@ -33,7 +36,10 @@ const AboutMetaverse: FunctionComponent = () => {
           </div>
         </div>
 
-        <div className="p-0 mt-10 md:mt-0 w-full md:w-[50%] md:mr-5">
+        <div
+          className="p-0 mt-10 md:mt-0 w-full md:w-[50%] md:mr-5"
+          data-aos="zoom-in"
+        >
           <Image
             alt="Metaverse"
             src="/ar2.png"

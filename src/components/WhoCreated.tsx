@@ -6,13 +6,19 @@ const WhoCreated: FunctionComponent = () => {
     <div className="relative mt-20" id="who_created">
       <div className="flex flex-col items-center justify-center overflow-hidden w-full h-full bg-bg">
         <div>
-          <h2 className="text-2xl md:text-3xl relative z-10 lg:text-[56px] text-iconColor font-semibold font-monserat leading-[120%] tracking-[1px] w-[95%]">
+          <h2
+            className="text-2xl md:text-3xl relative z-10 lg:text-[56px] text-iconColor font-semibold font-monserat leading-[120%] tracking-[1px] w-[95%]"
+            data-aos="fade-down"
+          >
             Who <span className="text-clay leading-[120%]">Created</span> the{" "}
             <span className="text-darkRed leading-[120%]">Metaverse</span>{" "}
             World?
           </h2>
 
-          <p className="font-manrope text-sm text-p lg:text-2xl mt-5 tracking-[0.5px] break-words whitespace-normal leading-[180%]">
+          <p
+            className="font-manrope text-sm text-p lg:text-2xl mt-5 tracking-[0.5px] break-words whitespace-normal leading-[180%]"
+            data-aos="slide-right"
+          >
             Metaverse is a phrase coined by Neal Stephenson in the science
             fiction novel &ldquo;Snow Crash&rdquo; (1992) to refer to the
             successor to the Internet. Metaverse is Stephenson&lsquo;s vision of
@@ -21,7 +27,7 @@ const WhoCreated: FunctionComponent = () => {
           </p>
         </div>
 
-        <div className="p-0 mt-8 w-full">
+        <div className="p-0 mt-8 w-full" data-aos="zoom-in">
           <Image
             alt="Metaverse"
             src="/ar4.png"

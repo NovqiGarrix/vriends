@@ -7,8 +7,6 @@ import {
   useRef,
 } from "react";
 import Link from "next/link";
-import Button from "./Button";
-import { ArrowRightIcon } from "@heroicons/react/outline";
 
 interface MobileHeaderDropdownProps {
   isOpen: boolean;

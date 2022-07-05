@@ -17,9 +17,11 @@ const Hero: FunctionComponent = () => {
       <div className="px-9 text-center mx-auto md:max-w-2xl lg:max-w-6xl">
         <div className="flex items-center justify-center">
           <div className="flex items-center -space-x-2">
-            {peoples.map(({ img }) => (
+            {peoples.map(({ img }, index) => (
               <div
                 key={img}
+                data-aos="slide-right"
+                data-aos-delay={`${index}00`}
                 className="w-6 h-6 rounded-full"
                 style={{
                   backgroundImage: `url(${img})`,
@@ -33,7 +35,10 @@ const Hero: FunctionComponent = () => {
 
           <div className="w-2 h-2 rounded-full bg-gradient-to-r from-darkGradient to-clay mx-3" />
 
-          <p className="font-manrope font-medium text-iconColor">
+          <p
+            className="font-manrope font-medium text-sm md:text-base text-iconColor"
+            data-aos="slide-left"
+          >
             <span className="text-clay">+400K </span> Active User
           </p>
         </div>
@@ -41,13 +46,20 @@ const Hero: FunctionComponent = () => {
         {/* Circle with Dashes */}
         <div className="w-12 h-12 rounded-full border-dashed border-2 border-dash absolute left-9 top-9" />
 
-        <h1 className="text-2xl lg:text-[64px] relative mt-5 text-iconColor font-semibold font-monserat leading-[120%] tracking-[1px]">
+        <h1
+          className="text-2xl lg:text-[64px] relative mt-5 text-iconColor font-semibold font-monserat leading-[120%] tracking-[1px]"
+          data-aos="zoom-in-up"
+        >
           <span className="text-clay">Explore</span> and{" "}
           <span className="text-darkRed">Find</span> your friends in virtual
           world
         </h1>
 
-        <p className="text-p text-sm lg:text-2xl font-manrope mt-3 leading-[180%]">
+        <p
+          className="text-p text-sm lg:text-2xl font-manrope mt-3 leading-[180%]"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
           Vriends is the evolution of the Virtual world. Our vision and mission
           is to make it easy for you to explore and find everything you want in
           our amazing virtual world. With us, you don&#8216;t have to worry to
@@ -57,7 +69,7 @@ const Hero: FunctionComponent = () => {
         <div className="w-[203px] h-[203px] rounded-full border-dashed border-2 border-dash absolute top-36 -right-20" />
 
         <div className="flex items-center w-full justify-around md:justify-center space-x-5 mt-8 relative">
-          <Button el="a" href="/login" passHref scroll>
+          <Button el="a" href="/login" passHref scroll data-aos="fade-up-right">
             Let&#8216;s Start!
           </Button>
           <Button
@@ -67,6 +79,7 @@ const Hero: FunctionComponent = () => {
             passHref
             scroll
             className="px-5"
+            data-aos="fade-down-left"
           >
             <p className="mr-2">View Demo</p>
             <ArrowRightIcon className="w-3 h-5 text-iconColor group-hover:text-bg" />
@@ -74,7 +87,10 @@ const Hero: FunctionComponent = () => {
         </div>
       </div>
 
-      <div className="relative mx-auto w-full flex items-center justify-center flex-col mt-5">
+      <div
+        className="relative mx-auto w-full flex items-center justify-center flex-col mt-5"
+        data-aos="zoom-out"
+      >
         <div className="w-80 md:w-96 lg:w-full mx-auto flex items-center justify-center">
           <Image
             alt="A Guy Playing with Virtual World"
@@ -85,7 +101,7 @@ const Hero: FunctionComponent = () => {
           />
         </div>
         <div className="companies flex items-center justify-around xl:justify-between xl:space-x-10 w-full py-5 lg:py-12 -mt-[79px] lg:-mt-[156px] px-10 md:px-48 lg:px-[430px] relative z-10">
-          <div className="w-24 lg:w-44">
+          <div className="w-24 lg:w-44" data-aos="fade-right">
             <Image
               alt="Google Logo"
               src="/google.png"
@@ -94,7 +110,7 @@ const Hero: FunctionComponent = () => {
               objectFit="contain"
             />
           </div>
-          <div className="lg:scale-150">
+          <div className="lg:scale-150" data-aos="fade-down">
             <Image
               alt="Android Logo"
               src="/android.png"
@@ -103,7 +119,7 @@ const Hero: FunctionComponent = () => {
               objectFit="contain"
             />
           </div>
-          <div className="w-32 lg:w-44 ">
+          <div className="w-32 lg:w-44" data-aos="fade-left">
             <Image
               alt="Facebook Logo"
               src="/facebook.png"

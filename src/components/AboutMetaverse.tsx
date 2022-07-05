@@ -10,20 +10,29 @@ const AboutMetaverse: FunctionComponent = () => {
 
       {/* <div className="bg-gradient-to-r from-darkGradient to-clay p-[1px]"> */}
       <div className="flex flex-col items-center justify-center md:flex-row-reverse overflow-hidden">
-        <div className="md:ml-5 md:w-[50%]">
+        <div className="md:ml-5 md:w-[50%]" data-aos="fade-right">
           <h2 className="text-2xl md:text-4xl relative z-10 lg:text-[56px] text-iconColor font-semibold font-monserat leading-[120%] tracking-[1px]">
             Let&#8216;s <span className="text-clay leading-tight">Find </span>{" "}
             out about{" "}
             <span className="text-darkRed leading-tight">Metaverse!</span>
           </h2>
 
-          <p className="font-manrope text-sm text-p lg:text-2xl mt-5 tracking-[0.5px] w-[98%] lg:w-[90%] break-words whitespace-normal leading-relaxed">
+          <p
+            className="font-manrope text-sm text-p lg:text-2xl mt-5 tracking-[0.5px] w-[98%] lg:w-[90%] break-words whitespace-normal leading-relaxed"
+            data-aos="fade-up-right"
+          >
             Metaverse is an Augmented Reality (AR) technology that allows
             individuals to interact with other individuals virtually.
           </p>
 
           <div className="relative w-[50%] mt-5 lg:mt-10">
-            <Button el="a" href="/more" passHref className="inline-flex">
+            <Button
+              el="a"
+              href="/more"
+              passHref
+              className="inline-flex"
+              data-aos="fade-up"
+            >
               Read More
             </Button>
             {/* Circle with Dashes */}
@@ -34,7 +43,10 @@ const AboutMetaverse: FunctionComponent = () => {
           </div>
         </div>
 
-        <div className="p-0 mt-10 md:mt-0 w-full md:w-[50%] md:mr-5">
+        <div
+          className="p-0 mt-10 md:mt-0 w-full md:w-[50%] md:mr-5"
+          data-aos="zoom-out"
+        >
           <Image
             alt="Metaverse"
             src="/ar2.png"
