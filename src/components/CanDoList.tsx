@@ -80,19 +80,17 @@ const CanDoList: FunctionComponent = () => {
       </h1>
 
       <div
-        className="p-[1px] bg-gradient-to-br from-white to-white/20 mt-7 lg:mt-16 rounded-3xl lg:rounded-[40px]"
-        data-aos="zoom-in"
+        className="grid gap-3 grid-cols-2 items-center justify-center p-5 py-10 md:py-16 md:grid-cols-3 lg:gap-8 bg-bg rounded-3xl lg:rounded-[40px] mt-7"
+        style={{ background: "#121519", backdropFilter: "blur(100px)" }}
       >
-        <div className="grid gap-3 grid-cols-2 items-center justify-center p-5 py-10 md:py-16 md:grid-cols-3 lg:gap-8 bg-bg rounded-3xl lg:rounded-[40px]">
-          {canDoLists.map((canDoList, index) => (
-            <IconTitle
-              key={canDoList.title}
-              title={canDoList.title}
-              index={index}
-              Icon={canDoList.Icon}
-            />
-          ))}
-        </div>
+        {canDoLists.map((canDoList, index) => (
+          <IconTitle
+            key={canDoList.title}
+            title={canDoList.title}
+            index={index}
+            Icon={canDoList.Icon}
+          />
+        ))}
       </div>
     </div>
   );

@@ -100,7 +100,7 @@ const Hero: FunctionComponent = () => {
             objectFit="contain"
           />
         </div>
-        <div className="companies flex items-center justify-around xl:justify-between xl:space-x-10 w-full py-5 lg:py-12 -mt-[79px] lg:-mt-[156px] px-10 md:px-48 lg:px-[430px] relative z-10">
+        <div className="companies flex items-center justify-around xl:justify-between xl:space-x-10 w-full py-5 lg:py-12 -mt-[79px] lg:-mt-[156px] px-10 md:px-48 relative z-10">
           <div className="w-24 lg:w-44" data-aos="fade-right">
             <Image
               alt="Google Logo"

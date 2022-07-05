@@ -3,6 +3,9 @@ import Image from "next/image";
 import Button from "./Button";
 
 const AboutMetaverse: FunctionComponent = () => {
+  const redirectToMorePage = () =>
+    typeof document && (document.location.href = "/more");
+
   return (
     <div className="relative">
       {/* Circle with Dashes */}
@@ -27,11 +30,12 @@ const AboutMetaverse: FunctionComponent = () => {
 
           <div className="relative w-[50%] mt-5 lg:mt-10">
             <Button
-              el="a"
-              href="/more"
-              passHref
+              el="button"
+              title="Read more"
+              onClick={redirectToMorePage}
               className="inline-flex"
               aos="fade-up"
+              type="button"
             >
               Read More
             </Button>

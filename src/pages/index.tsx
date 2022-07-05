@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import dynamic from "next/dynamic";
+
 import { IMetas } from "../components/Meta";
 import {
-  AboutMetaverse,
   Footer,
   Header,
   Hero,
@@ -20,6 +21,10 @@ const Home: NextPage = () => {
     title: "Vriends - The Virtual World",
     url: "/",
   };
+
+  const AboutMetaverse = dynamic(() => import("../components/AboutMetaverse"), {
+    ssr: false,
+  });
 
   return (
     <div className="bg-bg min-h-screen overflow-x-hidden">
