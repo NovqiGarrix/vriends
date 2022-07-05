@@ -12,7 +12,7 @@ const HowCard: FunctionComponent<IHowCardProps> = (props) => {
 
   return (
     <div
-      className="p-5 rounded-2xl bg-[#101C1C] md:min-h-[250px] lg:min-h-full"
+      className="p-5 rounded-2xl bg-[#0B0F14] md:min-h-[250px] lg:min-h-full"
       data-aos-delay={`${index}00`}
       data-aos="fade-up"
     >
