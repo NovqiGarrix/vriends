@@ -1,4 +1,4 @@
-import { writeFileSync } from "fs";
+const { writeFileSync } = require("fs");
 
 const indexDTS = `export declare let Pannellum: ((props: any) => JSX.Element) & {
     Hotspot: ((props: any) => JSX.Element) & {
@@ -25,6 +25,6 @@ const indexDTS = `export declare let Pannellum: ((props: any) => JSX.Element) & 
 writeFileSync("index.d.ts", indexDTS);
 
 writeFileSync(
-    "node_modules/@georgedrpg/pannellum-react-next/index.d.ts",
-    indexDTS
+  "node_modules/@georgedrpg/pannellum-react-next/index.d.ts",
+  indexDTS
 );

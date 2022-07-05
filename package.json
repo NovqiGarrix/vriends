@@ -8,7 +8,6 @@
     "lint": "next lint",
     "types": "node ./src/utils/writePannellumTypes.js"
   },
-  "type": "module",
   "dependencies": {
     "@georgedrpg/pannellum-react-next": "^1.2.5",
     "@heroicons/react": "^1.0.6",
