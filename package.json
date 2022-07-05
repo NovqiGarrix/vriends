@@ -5,8 +5,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "types": "node ./src/utils/writePannellumTypes.js"
   },
+  "type": "module",
   "dependencies": {
     "@georgedrpg/pannellum-react-next": "^1.2.5",
     "@heroicons/react": "^1.0.6",
@@ -22,6 +24,7 @@
     "eslint-config-next": "12.2.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.4",
+    "ts-node": "^10.8.2",
     "typescript": "4.7.4"
   }
 }
