@@ -1,30 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vriends - A Web with Virtual World.
 
-## Getting Started
+Dibuat menggunakan library React.js, dan menggunakan Framework Next.js, serta menggunakan bahasa pemograman TypeScript.
 
-First, run the development server:
+## A. Sebelum Instalasi
 
-```bash
+- Pastikan kamu memiliki Node.js dengan minimal versi 16.x
+
+## B. Cara Instalasi
+
+- Clone project ini, lalu masuk ke directory utama nya menggunakan terminal.
+- Lalu jalankan perintah:
+
+  ```
+  npm run install
+  ```
+
+  atau
+
+  ```
+  yarn
+  ```
+
+  Command ini digunakan untuk menginstall segala packages yang dibutuhkan.
+
+- Setelah proses instalasi package selesai, selanjutnya jalankan perintah ini untuk menginstall tambahan deklarasi types, karena menggunakan TypeScript.
+  ```
+  npm run types
+  ```
+  atau
+  ```
+  yarn types
+  ```
+
+## C. Cara Menjalankan Web
+
+Untuk menjalankan web nya, gunakan perintah: <br />
+
+```
 npm run dev
-# or
+```
+
+atau
+
+```
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Web akan berjalan di laman: `http://localhost:3000`. Jika ada program yang sudah menggunakan port `3000`, maka webnya akan otomatis mengganti port nya menjadi `3001`. Begitu seterusnya.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## D. Halaman (Page) yang tersedia
 
-## Learn More
+Saat menjalankan web nya, otomatis Framework Next.js akan memberikan URL dimana webnya sedang berjalan. Sesuaikan saja URL nya.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Halaman Utama: http://localhost:3000
+- Halaman Read More: http://localhost:3000/more
+- Halaman Virtual World: http://localhost:3000/virtual_world

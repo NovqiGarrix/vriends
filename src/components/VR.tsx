@@ -17,13 +17,7 @@ const VR: FunctionComponent = () => {
           console.log("panorama loaded");
         }}
       >
-        <Pannellum.Hotspot
-          type="custom"
-          pitch={31}
-          yaw={150}
-          handleClick={() => {}}
-          name="hs1"
-        />
+        <Pannellum.Hotspot type="custom" pitch={31} yaw={150} name="hs1" />
       </Pannellum>
     </div>
   );
